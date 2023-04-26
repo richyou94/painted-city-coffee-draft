@@ -116,7 +116,7 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  list-style: none !important;
 }
 
 blockquote,
@@ -2454,7 +2454,7 @@ ul.icons {
   cursor: default;
   list-style: none;
   padding-left: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -4180,255 +4180,57 @@ body.is-mobile.landing #footer {
   display: block;
 }
 
-/* .card {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  margin: 10px 0;
-  transition: ease-in 2s;
-  perspective: 1200px;
-}
-.card:hover .cover {
-  transform: rotate(0deg) rotateY(-180deg);
-}
-
-.card:hover .cover:before {
-  transform: translateZ(30px);
-}
-
-.card:hover .cover:after {
-  background-color: black;
-}
-
-.card:hover .cover li {
-  list-style: none;
-}
-
-.cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transform-style: preserve-3d;
-  transition: ease-in 2s;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.cover:before {
-  content: "";
-  position: absolute;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
-  transition: ease all 2s;
-  transform-style: preserve-3d;
-  transform: translateZ(0px);
-}
-
-.cover:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 2;
-  transition: ease all 1.3s;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.cover .item-a {
-  background-image: url("../../images/coffee.png");
-}
-.cover .item-b {
-  background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
-}
-.cover .item-c {
-  background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
-}
-
-.cover h1 {
-  font-weight: 600;
-  position: absolute;
-  bottom: 55px;
-  left: 50px;
-  color: black;
-  transform-style: preserve-3d;
-  transition: ease all 2s;
-  z-index: 3;
-  font-size: 3em;
-  transform: translateZ(0px);
-}
-
-.cover .card-back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #0b0f08;
-  transform-style: preserve-3d;
-  transition: ease all 2s;
-  transform: translateZ(-1px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cover .card-back li {
-  transform-style: preserve-3d;
-  transition: ease transform 2s, ease background 0.5s;
-  transform: translateZ(-1px) rotatey(-180deg);
-  background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: white;
-  padding: 14px 32px;
-  outline: none;
-  text-decoration: none;
-}
-
-.cover .card-back li:hover {
-  transform-style: preserve-3d;
-  transition: ease transform 2s, ease background 0.5s;
-  transform: translateZ(-1px) rotatey(-180deg);
-  background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: white;
-  padding: 14px 32px;
-  outline: none;
-  text-decoration: none;
-} */
 .card {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  margin: 10px 0;
-  transition: ease all 2.3s;
-  perspective: 1200px;
-}
-.card:hover .cover {
-  transform: rotateX(0deg) rotateY(-180deg);
-}
-.card:hover .cover:before {
-  transform: translateZ(30px);
-}
-.card:hover .cover:after {
-  background-color: black;
-}
-.card:hover .cover h1 {
-  transform: translateZ(100px);
-}
-.card:hover .cover .price {
-  transform: translateZ(60px);
-}
-.card:hover .cover a {
-  transform: translateZ(-60px) rotatey(-180deg);
-}
-.card .cover {
-  position: absolute;
   height: 100%;
-  width: 100%;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.card .cover:before {
-  content: "";
-  position: absolute;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
-  transition: ease all 2.3s;
-  transform-style: preserve-3d;
-  transform: translateZ(0px);
-}
-.card .cover:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 2;
-  transition: ease all 1.3s;
-  background: rgba(0, 0, 0, 0.4);
-}
-.card .cover.item-a {
-  background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
-}
-.card .cover.item-b {
-  background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
-}
-.card .cover.item-c {
-  background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
-}
-.card .cover h1 {
-  font-weight: 600;
-  position: absolute;
-  bottom: 55px;
-  left: 50px;
-  color: white;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  z-index: 3;
-  font-size: 3em;
-  transform: translateZ(0px);
-}
-.card .cover .price {
-  font-weight: 200;
-  position: absolute;
-  top: 55px;
-  right: 50px;
-  color: white;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  z-index: 4;
-  font-size: 2em;
-  transform: translateZ(0px);
-}
-.card .card-back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #0b0f08;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  transform: translateZ(-1px);
+  width: 20rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card .card-back a {
-  transform-style: preserve-3d;
-  /* transition: ease transform 2.3s, ease background 0.5s; */
-  transform: translateZ(-1px) rotatey(-180deg);
-  background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem;
+  /* background-color: #212A3E; */
+  background: radial-gradient(#344260,#505b72);
+  /* background: transparent; */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin: 0 2rem;
   color: white;
-  padding: 14px 32px;
-  outline: none;
-  text-decoration: none;
-}
-.card .card-back a:hover {
-  background-color: white;
-  color: #0b0f08;
 }
 
-.logo {
-  color: white;
-  fill: white;
+.card > img {
+  width: 100%;
+  height: auto;
+}
+
+.card > h2 {
+  margin-top: 1rem;
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #F1F6F9;
+  text-align: center;
+}
+.card > ul {
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  color: #F1F6F9;
+  text-align: center;
+}
+
+.card > li {
+  list-style: none;
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  color: #5e5e89;
+  text-align: center;
+}
+
+.row.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: initial;
+  width: 100%;
+}
+
+.menu-background {
+  background: radial-gradient(#5f646e, #303e58);
+  /* background: radial-gradient(#394867, #9ba4b5); */
 }
